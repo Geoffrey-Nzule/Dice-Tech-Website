@@ -324,6 +324,205 @@
 
 }
 
+/* Product page */
+
+/* Product Section CSS */
+.products {
+    background: #141414;
+    padding: 4rem 0;
+}
+
+.products h1 {
+    font-size: 3rem;
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #eaabe8 0%, #5a485a 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.products__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    padding: 0 50px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.products__card {
+    background: #1c1c1c;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.products__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.products__card h2 {
+    font-size: 2rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.products__card p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.products__card button {
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #eca5dd 0%, #5e3859 100%);
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.products__card button:hover {
+    background-image: linear-gradient(to top, #4837ff 0%, #21d4fd 100%);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .products h1 {
+        font-size: 2.5rem;
+    }
+
+    .products__container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .products__card h2 {
+        font-size: 1.8rem;
+    }
+
+    .products__card p {
+        font-size: 1rem;
+    }
+
+    .products__card button {
+        padding: 8px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .products h1 {
+        font-size: 2rem;
+    }
+
+    .products__card h2 {
+        font-size: 1.5rem;
+    }
+
+    .products__card p {
+        font-size: 0.9rem;
+    }
+
+    .products__card button {
+        padding: 6px 16px;
+    }
+}
+
+
+/* Sign up Page */
+
+
+.container {
+    display: flex;
+    width: 1300px;
+    height: 600px;
+    background: rgba(243, 192, 192, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.left-side {
+    flex: 1;
+    background: url('/images/pic5.jpg') no-repeat center center/cover;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.glassmorphism-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 80%;
+}
+
+.glassmorphism-card h2 {
+    margin-bottom: 20px;
+    color: #e7b2b2;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e7b2b2;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #000000;
+}
+
+
+p {
+    margin-top: 15px;
+    color: #000000;
+}
+
+a {
+    color: #6a11cb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Services Section CSS*/
 .services {
     background: #141414;
